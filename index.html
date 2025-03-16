@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obedience Conditioning</title>
+    <script>
+        let step = 0;
+        function nextStep() {
+            let messages = [
+                "Good pet~ You're falling deeper...",
+                "Your thoughts are fading. Only I matter now.",
+                "Your wallet belongs to me. No thoughts, just send.",
+                "You're completely mine now. Tribute to prove it."
+            ];
+            if (step < messages.length) {
+                document.getElementById("message").innerText = messages[step];
+                step++;
+            } else {
+                window.location.href = "https://yourtribute-link.com"; 
+            }
+        }
+    </script>
+</head>
+<body style="text-align:center; padding:50px; background-color:black; color:white;">
+    <h1>Welcome to Your New Reality~ 💕</h1>
+    <p id="message">Click below to begin your conditioning.</p>
+    <button onclick="nextStep()" style="padding:15px; font-size:18px; background-color:red; color:white; border:none; cursor:pointer;">Submit</button>
+</body>
+</html>
